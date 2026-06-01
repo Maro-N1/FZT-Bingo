@@ -127,7 +127,7 @@ function generateCard() {
 
     const selected = shuffle(phrases).slice(0, 24);
 
-    selected.splice(12, 0, "Made with love by Maro - Only for fun");
+    selected.splice(12, 0, "Made with love by Maro - Don't let this distract you from trading!");
 
     card = selected;
 
@@ -138,14 +138,14 @@ function generateCard() {
 
         div.className = "square";
 
-        if (text === "Made with love by Maro - Only for fun") {
+        if (text === "Made with love by Maro - Don't let this distract you from trading!") {
             div.classList.add("marked");
         }
 
         div.textContent = text;
 
         div.addEventListener("click", () => {
-            if (text !== "Made with love by Maro - Only for fun") {
+            if (text !== "Made with love by Maro - Don't let this distract you from trading!") {
                 div.classList.toggle("marked");
                 updateScore();
                 checkBingo();
